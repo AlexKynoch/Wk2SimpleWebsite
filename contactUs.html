@@ -28,11 +28,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="recipies.html">Recipies</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -41,51 +41,43 @@
             </div>
         </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-        <div class="row">
-            <div class="col-sm-6">
-
-                <img src="images/beans.jpg" alt="">
-            </div>
-            <div class="col-sm-6">
-                <div class="article">Beans on Toast
-
-
-                    <div>
-                        <h5>Ingredients</h5>
-                    </div>
-                    <ul>
-                        <li>Tin of beans.</li>
-                        <li>2 slices of bread.</li>
-                        <li>butter.</li>
-                    </ul>
-                    <h5>Method</h5>
-                    <ul>
-                        <li>Open the tin of beans and put the contents into a pan.</li>
-                        <li>Heat the beans for time specified on the packaging.</li>
-                        <li>Put the bread in the toaster and switch on.</li>
-                        <li>When toast is cooked to your liking place toasted bread on a plate and spread butter on the
-                            toast.</li>
-                        <li>Pour the hot beans on the toast and serve immediately.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
+        <!--title-->
+        <div class="title">
+            Send us your recipies.
         </div>
+        <!--form-->
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>I would like to leave a comment</option>
+                    <option>I would like to leave a recipe</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Please add your recipe/comment in the box below.</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+
+        </form>
+
     </div>
 
+
+    <script>
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
