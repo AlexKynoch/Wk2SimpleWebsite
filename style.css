@@ -1,9 +1,8 @@
 .container-fluid{
     margin: 0;
     padding: 0;
-    /* height: 100%;
-    width: 100%; */
     background-color: #000000;
+    color:#ffffff;
 }
 
 
@@ -17,15 +16,42 @@
     text-align: right;
 }
 
-.carosel{
-    background-color: orange;
+.carousel-caption{
+    color:black;
 }
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+  }
+
+.welcome {
+text-align: center;
+}
+
 
 .cards{
     background-color: green;
 }
 
+.article{
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+  
+}
+
+.article li{
+    font-size: 15px;
+    text-align: left;
+    list-style: none;
+}
+
+
+
+
 .footer{
+    background-color: #000000;
     color:white;
     text-align: center;
 }
