@@ -46,20 +46,22 @@
             Send us your recipies.
         </div>
         <!--form-->
-        <form>
+        <form name = "myform">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Your Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your name">
+                
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="your name">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Your Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="email">Your Email address</label>
+                <input type="email" name="email" id="email" placeholder="name@example.com">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Select</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                    <option>I would like to leave a comment</option>
-                    <option>I would like to leave a recipe</option>
+                    <option>I want to leave a recipe.</option>
+                    <option>I want to tell you about my favourite toaster.</option>
+                    <option>I want to leave a comment.</option>
                 </select>
             </div>
 
@@ -68,14 +70,44 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
-
+            <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button> -->
+            <input type ="button" value="submit" onclick="validateForm()">
+            
         </form>
 
     </div>
 
 
     <script>
+// function validateForm(){
+//           let x = document.forms["myform"]["name"].value;
+        
+//           if (x == ""){
+//             alert("name must be filled out");
+//             document.forms.myform.name.focus();
+//             return false;
+//           } else {
+//               return true;
+//           }
+//         }
+
+
+function validateForm(){
+    var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    // if               (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
+          let x = document.forms["myform"]["name"].value;
+          let y = document.forms["myform"]["email"].value;
+          if (x == ""){
+            alert("name must be filled out");
+            return false;
+          }else if(emailformat.test(myform.email.value) == false){
+            alert("email is not valid");
+            return false;
+
+          }
+          return true
+
+        }
 
     </script>
 
