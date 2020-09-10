@@ -61,6 +61,7 @@ text-align: center;
     justify-content: center !important;
 }
 
+
 .article{
     color: #ffffff;
     text-align: center;
@@ -88,11 +89,7 @@ text-align: center;
    
 }
 
-/* .button {
-    margin: 20px,0px,20px,0;
-    display: flex;
-    justify-content: center !important;
-} */
+
 .footer{
     padding-top: 20px;
     padding-bottom: 10px;
