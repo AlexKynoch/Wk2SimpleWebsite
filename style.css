@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     background-color: #000000;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color:#343a40
     /* display: flex; */
 }
-
 
 .navbar-brand  {
     font-family: Monaco;
@@ -24,8 +24,7 @@
     font-size: 20px;
     color: red;
     border-bottom: 4px solid rgb(151, 84, 7);
-  }
-
+}
 
 .nav-link{
     text-align: right;
@@ -33,11 +32,19 @@
 
 h1{
     font-size: 30px;
+    color:#ffffff;
 }
 
 .carousel-caption{
-    color:black;
+    color:#343a40;
+    font-size: 25px;
 }
+
+.carousel-caption a{
+    color:#343a40;
+    font-size: 25px;
+    
+} 
 
 .carousel-item img {
     height: 100%;
@@ -48,20 +55,16 @@ h1{
 text-align: center;
 }
 
-
 .btn{
     margin: 20px,0px,20px,0;
     display: flex;
     justify-content: center !important;
 }
 
-
-
 .article{
     color: #ffffff;
     text-align: center;
     font-size: 25px;
-  
 }
 
 .article li {
@@ -70,16 +73,17 @@ text-align: center;
     /* list-style: none; */
 }
 
-
 .title{
 
     font-size: 25px;
     text-align: center;
     padding: 5px;
+    color:#ffffff;
 }
 
 .form-group{
     background-color: #221a1a;
+    color:#ffffff;
     padding: 10px;
    
 }
