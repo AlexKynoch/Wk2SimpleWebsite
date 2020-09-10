@@ -48,7 +48,7 @@
 
         </div>
         <!--form-->
-        <form name="myform">
+        <form name="myform" id = "myform">
             <div class="form-group">
 
                 <label for="name">Your Name</label>
@@ -73,8 +73,7 @@
             </div>
 
             <div>
-                <!-- <input class="class="btn btn-primary-type="button" value="submit" onclick="validateForm()"> -->
-                <a href="onclick="validateForm() class="btn btn-primary">Submit</a> -->
+                <input class="btn btn-primary"  value="submit" onclick="validateForm()">
             </div>
             
 
@@ -95,7 +94,6 @@
 
         function validateForm() {
             var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            // if               (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
             let x = document.forms["myform"]["name"].value;
             let y = document.forms["myform"]["email"].value;
             if (x == "") {
@@ -107,10 +105,13 @@
                 document.forms.myform.email.focus();
                 return false;
 
+            }else{
+            document.getElementById("myform").reset();
+            alert("Thankyou for your contribution - your form has been submitted");
             }
-            return true
-
         }
+
+       
 
     </script>
 

@@ -55,7 +55,7 @@ h1{
 text-align: center;
 }
 
-.btn{
+.btn {
     margin: 20px,0px,20px,0;
     display: flex;
     justify-content: center !important;
@@ -88,6 +88,11 @@ text-align: center;
    
 }
 
+/* .button {
+    margin: 20px,0px,20px,0;
+    display: flex;
+    justify-content: center !important;
+} */
 .footer{
     padding-top: 20px;
     padding-bottom: 10px;
