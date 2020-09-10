@@ -3,6 +3,7 @@
     padding: 0;
     background-color: #000000;
     color:#ffffff;
+    /* display: flex; */
 }
 
 
@@ -19,9 +20,19 @@
     margin: 10px, 0, 10px, 0px;
 }
 
+.active{
+    font-size: 20px;
+    color: red;
+    border-bottom: 2px solid rgb(151, 84, 7);
+  }
+
 
 .nav-link{
     text-align: right;
+}
+
+h1{
+    font-size: 30px;
 }
 
 .carousel-caption{
@@ -74,7 +85,7 @@ text-align: center;
 .footer{
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: #000000;
+    background-color: #343a40;
     color:white;
     text-align: center;
 }
