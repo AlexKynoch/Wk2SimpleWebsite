@@ -43,12 +43,14 @@
 
         <!--title-->
         <div class="title">
-            Send us your recipies.
+            <h1>Contact Us</h1>
+            <p>Please send us your recipies and comments. We value your ideas and contributions.</p>
+
         </div>
         <!--form-->
-        <form name = "myform">
+        <form name="myform">
             <div class="form-group">
-                
+
                 <label for="name">Your Name</label>
                 <input type="text" name="name" id="name" placeholder="your name">
             </div>
@@ -70,42 +72,32 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
 
-            <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button> -->
-            <input type ="button" value="submit" onclick="validateForm()">
             
+            <input type="button" value="submit" onclick="validateForm()">
+
         </form>
 
     </div>
 
 
     <script>
-// function validateForm(){
-//           let x = document.forms["myform"]["name"].value;
-        
-//           if (x == ""){
-//             alert("name must be filled out");
-//             document.forms.myform.name.focus();
-//             return false;
-//           } else {
-//               return true;
-//           }
-//         }
 
+        function validateForm() {
+            var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            // if               (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
+            let x = document.forms["myform"]["name"].value;
+            let y = document.forms["myform"]["email"].value;
+            if (x == "") {
+                alert("name must be filled out");
+                document.forms.myform.name.focus();
+                return false;
+            } else if (emailformat.test(myform.email.value) == false) {
+                alert("email is not valid");
+                document.forms.myform.email.focus();
+                return false;
 
-function validateForm(){
-    var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    // if               (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
-          let x = document.forms["myform"]["name"].value;
-          let y = document.forms["myform"]["email"].value;
-          if (x == ""){
-            alert("name must be filled out");
-            return false;
-          }else if(emailformat.test(myform.email.value) == false){
-            alert("email is not valid");
-            return false;
-
-          }
-          return true
+            }
+            return true
 
         }
 
